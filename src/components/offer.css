@@ -1,0 +1,22 @@
+.offer {
+    padding: 0vw 30vw;
+    margin-bottom: 10vw;
+    margin-top: 0vw;
+    text-align: left;
+}
+
+.offer h1 {
+    text-align: center;
+    line-height: 5vw;
+    font-weight: 900;
+}
+
+.offer h2 {
+    text-align: center;
+    margin-top: 3vw;
+}
+
+.offer p {
+    padding-left: 1vw;
+    border-left: solid 0.5vw #fdc73e3e;
+}

@@ -1,0 +1,44 @@
+#root {
+    font-family: 'Manrope', sans-serif;
+}
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+    margin-top: -0.6vw;
+    height: 8vw;
+    font-weight: 900;
+}
+
+
+.navbar ul {
+    margin: auto;
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    font-size: 1.5vw;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 2.5vw;
+}
+
+.navbar ul li a {
+    color: #000d2a;
+}
+
+.navbar img {
+    margin-right: 5vw;
+    height: 7vw;
+    position: relative;
+}
+
+
+.navbar ul li:hover {
+    color: #FDC73E;
+    transition: linear 0.3s;
+    cursor: pointer;
+}

@@ -1,0 +1,45 @@
+.about {
+    padding: 5vw 10vw;
+    margin: auto;
+}
+
+.about h1 {
+    text-align: center;
+}
+
+.about h2 {
+    text-align: left;
+}
+
+.about p {
+    text-align: justify;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 5vw;
+}
+
+
+.about--inf {
+    width: 30vw;
+}
+
+.column {
+    padding: 2vw;
+}
+
+.about .image {
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image img {
+    width: 27vw;
+    height: 27vw;
+    object-fit: cover;
+    justify-content: center;
+}
