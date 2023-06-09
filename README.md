@@ -1,2 +1,4 @@
 # Interior-Design-Portfolio
-Web application portfolio and business card for interior designer 
+Web portfolio and business card for an interior designer
+
+https://ephemeral-sorbet-06d599.netlify.app
