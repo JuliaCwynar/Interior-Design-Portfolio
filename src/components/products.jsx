@@ -9,11 +9,11 @@ function Products() {
             <h1>realizacje</h1>
             <div className='products--img'>
                 <div class="image-container">
-                    <img src="../public/wiz1.png" class="image" />
+                    <img src="../../public/wiz1.png" class="image" />
                     <div class="text">zobacz więcej</div>
                 </div>
             <div class="image-container">
-                <img src="../public/wiz1.png" class="image" />
+                <img src="../../public/wiz1.png" class="image" />
                 <div class="text">zobacz więcej</div>
             </div>
             </div>

@@ -1,5 +1,5 @@
-import React, { useRef } from 'react'
-import {InstagramOutlined} from '@ant-design/icons'
+import React, { useState } from 'react'
+import {InstagramOutlined, MenuOutlined} from '@ant-design/icons'
 import logo from '../../public/logo.svg'
 import './navbar.css'
 
@@ -7,6 +7,9 @@ import './navbar.css'
 
 
 function Navbar() {
+
+    const [showMenu, setShowMenu] = useState(window.innerWidth > 600);
+
 
     const handleClick = (position) => {
         window.scrollTo({
@@ -16,16 +19,22 @@ function Navbar() {
       console.log(position)
     }
 
+
     return (
       <>
         <div className='navbar'>
                     <ul>
                         <img src={logo} alt='Maria Design' onClick={() => handleClick(0)}></img>
-                        <li onClick={() => handleClick(900)}>o mnie</li>
-                        <li onClick={() => handleClick(1650)}>realizacje</li>
-                        <li onClick={() => handleClick(2450)}>oferta</li>
-                        <li onClick={() => handleClick(3800)}>kontakt</li>
-                        <li><a href='www.instagram.com/julka.cwynar'/><InstagramOutlined/></li>
+                        {showMenu  &&
+                        <ul className='listed--menu'>
+                            <li onClick={() => handleClick(900)}>o mnie</li>
+                            <li onClick={() => handleClick(1650)}>realizacje</li>
+                            <li onClick={() => handleClick(2450)}>oferta</li>
+                            <li onClick={() => handleClick(3800)}>kontakt</li>
+                            <li ><a href='www.instagram.com/julka.cwynar'/><InstagramOutlined className='instagram'/></li>
+                        </ul>
+                        }
+                        <li className='more' onClick={() => setShowMenu(!showMenu)}><MenuOutlined/></li>
                     </ul>
             </div>
       </>
