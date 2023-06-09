@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import {InstagramOutlined} from '@ant-design/icons'
 import logo from '../../public/logo.svg'
 import './navbar.css'
@@ -7,17 +7,25 @@ import './navbar.css'
 
 
 function Navbar() {
-  
+
+    const handleClick = (position) => {
+        window.scrollTo({
+            top: position,
+            behavior: 'smooth',
+      });
+      console.log(position)
+    }
+
     return (
       <>
         <div className='navbar'>
                     <ul>
-                        <img src={logo}></img>
-                        <li><a href="#"/>o mnie</li>
-                        <li><a href="#"/>realizacje</li>
-                        <li><a href="#"/>oferta</li>
-                        <li><a href="#"/>kontakt</li>
-                        <li><a href="#"/><InstagramOutlined/></li>
+                        <img src={logo} alt='Maria Design' onClick={() => handleClick(0)}></img>
+                        <li onClick={() => handleClick(900)}>o mnie</li>
+                        <li onClick={() => handleClick(1650)}>realizacje</li>
+                        <li onClick={() => handleClick(2450)}>oferta</li>
+                        <li onClick={() => handleClick(3800)}>kontakt</li>
+                        <li><a href='www.instagram.com/julka.cwynar'/><InstagramOutlined/></li>
                     </ul>
             </div>
       </>

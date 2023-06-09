@@ -9,14 +9,41 @@
     text-align: center;
     line-height: 5vw;
     font-weight: 900;
+    font-size: 3vw;
 }
 
 .offer h2 {
     text-align: center;
     margin-top: 3vw;
+    font-size: 1.5vw;
 }
 
 .offer p {
     padding-left: 1vw;
     border-left: solid 0.5vw #fdc73e3e;
+    font-size: 1vw;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .offer--desc {
+        margin-top: 10vw;
+    }
+    .offer {
+        padding: 0vw 10vw;
+    }
+
+    .offer h1 {
+        font-size: 7vw;
+    }
+
+    .offer h2 {
+        font-size: 4.5vw;
+    }
+
+    .offer p {
+        font-size: 3vw;
+        border-left: solid 1.5vw #fdc73e3e;
+    }
 }
