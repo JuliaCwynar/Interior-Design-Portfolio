@@ -1,0 +1,30 @@
+
+
+.portfolio {
+    padding-top: 10vw;
+    margin: 0 20vw;
+}
+
+.portfolio .title {
+    margin-bottom: 2vw;
+    line-height: 1vw;
+    width: 30vw;
+    text-align: left;
+    padding-left: 2vw;
+    border-bottom: 0.6vw solid rgba(255, 217, 0, 0.386);
+}
+
+
+.project--tiles {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 10vw;
+    gap: 5vw 0vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .project--tiles {
+        grid-template-columns: auto;
+    }
+}

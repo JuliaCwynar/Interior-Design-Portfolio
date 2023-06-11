@@ -6,7 +6,7 @@
     display: flex;
     background-color: white;
     z-index: 2;
-    margin-top: -0.6vw;
+    margin-top: -0.4vw;
     height: 8vw;
     font-weight: 900;
     padding: 0;
@@ -70,7 +70,7 @@
         width: 100%;
         position: relative;
         top: 16vw;
-        left: -21vw;
+        left: -16vw;
     }
     .navbar ul li {
         font-size: 5vw;
@@ -86,8 +86,8 @@
         font-size: 5vw;
         display: inline;
         position: absolute;
-        left: 84vw;
-        top: 3vw;
+        left: 89vw;
+        top: 2vw;
         
     }
   }

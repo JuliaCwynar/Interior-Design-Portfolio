@@ -1,5 +1,7 @@
 import React from 'react'
 import './products.css'
+import wiz1 from '../../public/wiz1.png'
+import { Link} from 'react-router-dom'
 
 function Products() {
 
@@ -9,15 +11,15 @@ function Products() {
             <h1>realizacje</h1>
             <div className='products--img'>
                 <div class="image-container">
-                    <img src="../../public/wiz1.png" class="image" />
+                    <img src={wiz1} class="image" />
                     <div class="text">zobacz więcej</div>
                 </div>
             <div class="image-container">
-                <img src="../../public/wiz1.png" class="image" />
+                <img src={wiz1} class="image" />
                 <div class="text">zobacz więcej</div>
             </div>
             </div>
-            <div className='button'><button>wszystkie realizacje</button></div>
+            <div className='button'><Link to="/portfolio"><button onClick={() => window.scrollTo({top: '0vw'})}>wszystkie realizacje</button></Link></div>
         </div>
     )
 

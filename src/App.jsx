@@ -1,21 +1,22 @@
 
 import Navbar from '../src/components/navbar.jsx'
-import About from '../src/components/about.jsx'
-import Photo from '../src/components/photo.jsx'
 import Footer from '../src/components/footer.jsx'
-import Products from '../src/components/products.jsx'
-import Offer from '../src/components/offer.jsx'
 import './components/app.css'
+import Homepage from './homepage.jsx'
+import Portfolio from '../src/components/portfolio.jsx'
+import { Route,  Routes } from 'react-router-dom'
+import SingleProject from '../src/components/singleproject.jsx'
 
 function App() {
 
   return (
     <>
-      <Navbar></Navbar>
-      <Photo/>
-      <About/>
-      <Products/>
-      <Offer/>
+      <Navbar/>
+      <Routes>
+          <Route path='/' element={<Homepage/>}/>
+          <Route path='/portfolio' element={<Portfolio />}/>
+          <Route path='/project' element={<SingleProject />}/>
+      </Routes>
       <Footer/>
     </>
   )

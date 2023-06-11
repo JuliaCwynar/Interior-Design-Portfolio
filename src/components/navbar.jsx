@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {InstagramOutlined, MenuOutlined} from '@ant-design/icons'
 import logo from '../../public/logo.svg'
 import './navbar.css'
+import {Link} from 'react-router-dom'
 
 
 
@@ -24,7 +25,7 @@ function Navbar() {
       <>
         <div className='navbar'>
                     <ul>
-                        <img src={logo} alt='Maria Design' onClick={() => handleClick(0)}></img>
+                        <Link to="/"><img src={logo} alt='Maria Design' onClick={() => handleClick(0)}></img></Link>
                         {showMenu  &&
                         <ul className='listed--menu'>
                             <li onClick={() => handleClick(900)}>o mnie</li>

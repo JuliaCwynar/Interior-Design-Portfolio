@@ -17,7 +17,6 @@ function Footer() {
                 <h1>godziny otwarcia</h1>
                 <p>9:00-16:00</p>
             </div>
-        
         </div>
     )
 }
