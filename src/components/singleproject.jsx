@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './singleproject.css';
 import wiz1 from '../../public/wiz1.png';
 import {PlusCircleOutlined, CloseOutlined, LeftOutlined, RightOutlined} from '@ant-design/icons'
+import './portfolio.css';
 
 function Photo() {
   const [showImg, setShowImg] = useState(false);
@@ -33,16 +34,21 @@ function Photo() {
 
 function SingleProject() {
   return (
+    <div className='project'>
+        <div className='title'>
+            <h1>Projekt</h1>
+        </div>
     <div className='single--project' >
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
+        <Photo />
+        <Photo />
+        <Photo />
+        <Photo />
+        <Photo />
+        <Photo />
+        <Photo />
+        <Photo />
+        <Photo />
+    </div>
     </div>
   );
 }

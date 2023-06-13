@@ -9,7 +9,7 @@ function ProjectTile() {
             <div className='products--img'>
                 <div class="image-container">
                     <img src={wiz1} class="image" />
-                    <Link to="/project"><div class="text">zobacz więcej</div></Link>
+                    <Link to="/project"><div class="text">Projekt</div></Link>
             </div>
             </div>
          

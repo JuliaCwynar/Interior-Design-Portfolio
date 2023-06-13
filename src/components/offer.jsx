@@ -1,11 +1,10 @@
-import React from 'react'
+import React, {forwardRef} from 'react'
 import './offer.css'
 
-function Offer() {
-
+const Offer = forwardRef((props, ref) => {
 
     return (
-        <div className='offer'>
+        <div ref={ref} className='offer'>
             <h1>oferta</h1>
             <div className='offer--desc'>
                 <h2>Konsultacje godzinowe</h2>
@@ -22,6 +21,6 @@ function Offer() {
         </div>
     )
 
-}
+})
 
 export default Offer

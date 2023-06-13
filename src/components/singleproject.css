@@ -1,5 +1,11 @@
+.project {
+    padding-top: 10vw;
+    width: 100%;
+    padding-bottom: 10vw;
+}
+
 .single--project {
-    padding: 10vw 20vw;
+    padding: 2vw 20vw;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 1vw;
@@ -8,16 +14,16 @@
 
 .single--project .single--photo .image {
     width: 20vw;
-    height: 20vw;
+    height: auto;
     object-fit: cover;
 }
 
 .big--img {
     display: block;
     position: fixed; 
-    z-index: 1; 
+    z-index: 4; 
     left: 0;
-    top: 5vw;
+    top: 0vw;
     width: 100%; 
     height: 100%; 
     overflow: auto; 
@@ -28,10 +34,10 @@
 .big--img img{
     position: relative;
     left: 1.4vw;
-    height: 35vw;
+    height: 40vw;
     margin: auto;
     display: block;
-    margin-top: 5vw;
+    top: 5vw;
 
 }
 
@@ -43,8 +49,7 @@
     max-width: 700px;
     text-align: center;
     color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+    padding-top: 6vw;
 }
 .single--project .text {
     font-size: 1.3vw;
@@ -62,7 +67,7 @@
   
   .close--button {
     position: absolute;
-    top: 3vw;
+    top: 0.5vw;
     right: 1vw;
     color: #f1f1f1;
     font-size: 1.5vw;
@@ -86,8 +91,8 @@
     color: #f1f1f1;
     font-size: 1.5vw;
     transition: 0.3s;
-    left: 16vw;
-    top: 23vw;
+    left: 12vw;
+    top: 25vw;
   }
 
   .next--button {
@@ -95,9 +100,17 @@
     color: #f1f1f1;
     font-size: 1.5vw;
     transition: 0.3s;
-    left: 84vw;
-    top: 23vw;
+    left: 88vw;
+    top: 25vw;
   }
+
+  .project .title {
+    line-height: 1vw;
+    width: 30vw;
+    text-align: left;
+    margin-left: 20vw;
+    border-bottom: 0.6vw solid rgba(255, 217, 0, 0.386);
+}
 
   
 @media only screen and (max-width: 600px) {

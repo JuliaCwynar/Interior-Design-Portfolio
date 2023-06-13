@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import Map, {NavigationControl, Marker} from 'react-map-gl';
 import maplibregl from 'maplibre-gl';
 import './footer.css'
 
 
-function Footer() {
+const Footer = forwardRef((props, ref) => {
     return (
-        <div className='footer'>
+        <div ref={ref} className='footer'>
             <div className='footer--info'>
                 <h1>kontakt</h1>
                 <p>Maria Zębroń-Kępa</p>
@@ -20,6 +20,7 @@ function Footer() {
         </div>
     )
 }
+)
 
 
 export default Footer

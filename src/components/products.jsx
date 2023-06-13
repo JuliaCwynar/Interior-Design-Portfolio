@@ -1,13 +1,12 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import './products.css'
 import wiz1 from '../../public/wiz1.png'
 import { Link} from 'react-router-dom'
 
-function Products() {
-
+const Products = forwardRef((props, ref) => {
 
     return (
-        <div className='products'>
+        <div ref={ref} className='products'>
             <h1>realizacje</h1>
             <div className='products--img'>
                 <div class="image-container">
@@ -23,6 +22,6 @@ function Products() {
         </div>
     )
 
-}
+})
 
 export default Products
