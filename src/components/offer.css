@@ -1,6 +1,5 @@
 .offer {
-    padding: 4.5vw 30vw 0 30vw;
-    margin-bottom: 10vw;
+    padding: 4.5vw 30vw 10vw 30vw;
     margin-top: 0vw;
     text-align: left;
 }
@@ -31,19 +30,19 @@
         margin-top: 10vw;
     }
     .offer {
-        padding: 20vw 10vw;
+        padding: 20vw 10vw 10vw 10vw;
     }
 
     .offer h1 {
-        font-size: 7vw;
+        font-size: 10vw;
     }
 
     .offer h2 {
-        font-size: 4.5vw;
+        font-size: 7.5vw;
     }
 
     .offer p {
-        font-size: 3vw;
+        font-size: 4.5vw;
         border-left: solid 1.5vw #fdc73e3e;
     }
 }

@@ -18,7 +18,7 @@ const Footer = forwardRef((props, ref) => {
                 <p>9:00-16:00</p>
             </div>
             <div className='footer--img'>
-                <img src='https://loyaltytraveler.boardingarea.com/wp-content/uploads/2018/08/Google-Maps-HGI-Krakow.png'></img>
+                <img src='https://alizahid.dev/_next/image?url=https%3A%2F%2Fmedia.graphassets.com%2FukmE2ezySfqPEjUpQik9&w=3840&q=75'></img>
             </div>
         </div>
     )

@@ -115,15 +115,25 @@
   
 @media only screen and (max-width: 600px) {
 
+    .project .title {
+        width: 60%;
+        margin-left: 10vw;
+    }
+
+    .project {
+        padding-top: 25vw;
+        margin: 0px;
+    }
+
     .single--project {
         grid-template-columns: auto;
-        padding-top: 20vw;
+        padding-top: 0vw;
         justify-content: center;
     }
 
     .single--project .single--photo .image {
-        width: 70vw;
-        height: 70vw;
+        width: 80vw;
+        height: 80vw;
         object-fit: cover;
     }
 
@@ -150,16 +160,18 @@
       .prev--button {
         font-size: 6vw;
         left: 3vw;
-        top: 72vw;
+        top: 77vw;
       }
     
       .next--button {
         font-size: 6vw;
         left: 91vw;
-        top: 72vw;
+        top: 77vw;
       }
 
       .big--img--desc {
+        position: relative;
+        top: 1vw;
         font-size: 5vw;
     }
     

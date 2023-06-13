@@ -1,7 +1,7 @@
 
 
 .portfolio {
-    padding-top: 10vw;
+    padding-top: 25vw;
     margin: 0 20vw;
 }
 
@@ -24,7 +24,19 @@
 
 @media only screen and (max-width: 600px) {
 
+    .portfolio {
+        margin: 0px;
+        padding: 20vw 10vw;
+    }
+
     .project--tiles {
+        display: grid;
         grid-template-columns: auto;
+    }
+
+    .portfolio .title {
+        width: 100%;
+        line-height: 8vw;
+        font-size: 4vw;
     }
 }
