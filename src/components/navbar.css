@@ -50,6 +50,7 @@
 
     .navbar {
         height: 16vw;
+        padding-bottom: 1vw;
     }
     .navbar img {
         height: 15vw;

@@ -6,7 +6,6 @@
     position: relative;
     margin: 0;
     line-height: 0.7vw;
-    padding-bottom: 2vw;
 }
 
 .footer--info {
@@ -25,6 +24,12 @@
 
 .footer p {
     font-size: 1vw;
+}
+
+.footer--img img{
+    object-fit: cover;
+    width: 68.7vw;
+    height: 20vw;
 }
 
 @media only screen and (max-width: 600px) {
@@ -52,5 +57,9 @@
     .footer--info {
         padding: 0vw;
         margin: auto;
+    }
+
+    .footer--img {
+        display: none;
     }
 }

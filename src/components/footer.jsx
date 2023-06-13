@@ -17,6 +17,9 @@ const Footer = forwardRef((props, ref) => {
                 <h1>godziny otwarcia</h1>
                 <p>9:00-16:00</p>
             </div>
+            <div className='footer--img'>
+                <img src='https://loyaltytraveler.boardingarea.com/wp-content/uploads/2018/08/Google-Maps-HGI-Krakow.png'></img>
+            </div>
         </div>
     )
 }

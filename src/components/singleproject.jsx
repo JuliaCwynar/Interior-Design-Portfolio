@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './singleproject.css';
 import wiz1 from '../../public/wiz1.png';
-import {PlusCircleOutlined, CloseOutlined, LeftOutlined, RightOutlined} from '@ant-design/icons'
+import {PlusOutlined, CloseOutlined, LeftOutlined, RightOutlined} from '@ant-design/icons'
 import './portfolio.css';
 
 function Photo() {
@@ -17,7 +17,7 @@ function Photo() {
     <div className='single--photo'>
       <div className="image-container">
         <img src={wiz1} className="image" />
-        <div className="text" onClick={closeImage}><PlusCircleOutlined style={{fontSize: '2vw'}}/></div>
+        <div className="text" onClick={closeImage}><PlusOutlined style={{fontSize: '1.5vw'}}/></div>
         {showImg && (
           <div className='big--img'>
             <span className='close--button'><CloseOutlined onClick={closeImage} /></span>
